@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(245, 239, 215);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.intro-text h1 {
+  font-size: 160px;
+  text-decoration: none;
+  font-weight: 100;
+  -webkit-text-fill-color: rgb(
+    245,
+    239,
+    215
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 7px;
+  -webkit-text-stroke-color: black;
+}
+
+.introduction {
+  color: rgb(56, 96, 255);
+  font-family: "Alata", sans-serif;
+  flex: 1;
+  animation: fadeIn 3s;
+}
+
+.name {
+  font-size: 160px;
+  text-decoration: none;
+  font-weight: 400;
+  -webkit-text-fill-color: rgb(
+    245,
+    239,
+    215
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 7px;
+  -webkit-text-stroke-color: black;
+}
+
+.job {
+  font-size: 160px;
+  text-decoration: none;
+  font-weight: 100;
+  -webkit-text-fill-color: rgb(
+    245,
+    239,
+    215
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 7px;
+  -webkit-text-stroke-color: black;
+}
+.description {
+  font-size: 120px;
+  text-decoration: none;
+  font-weight: 400;
+  -webkit-text-fill-color: rgb(
+    245,
+    239,
+    215
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 7px;
+  -webkit-text-stroke-color: black;
+}
+
+.about {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  flex: 1;
+  border-radius: 25px;
+  padding: 25px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  color: black;
+  background-color: white;
+  animation: fadeIn 3s;
+}
+
+.about img {
+  height: 20vh;
+}
+
+.about h1 {
+  font-family: "Alata", sans-serif;
+  font-size: 120px;
+  -webkit-text-fill-color: rgb(
+    245,
+    239,
+    215
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 7px;
+  -webkit-text-stroke-color: black;
+}
+
+.models {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 150vh;
+  align-items: center;
+  color: black;
+}
+
+.gradientB h1 {
+  font-family: "Alata", sans-serif;
+  font-size: 60px;
+  -webkit-text-fill-color: rgb(
+    245,
+    239,
+    215
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.randomF h1 {
+  font-family: "Alata", sans-serif;
+  font-size: 60px;
+  -webkit-text-fill-color: rgb(
+    245,
+    239,
+    215
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.gradientB {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Alata", sans-serif;
+  flex: 1 1 0px;
+  border-radius: 25px;
+  padding: 25px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  color: black;
+  background-color: white;
+}
+
+.randomF {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Alata", sans-serif;
+  flex: 1 1 0px;
+  border-radius: 25px;
+  padding: 25px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  color: black;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+.type-1 {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: 0.3s border-color;
+}
+.type-1:hover {
+  border: 1px solid #aaa;
+}
+
+@keyframes fadeIn {
+  /*Then, don't actually animate anything for, in this case, 4 seconds*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

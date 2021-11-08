@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+     <title>parceLab - ETD prediction</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+     <link rel="stylesheet" href="../static/css/style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+
+ </head>
+
+ <body>
+     <header>
+
+     </header>
+
+     <main>
+        <section class="presentation">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>Hello,</h1>
+                    
+                </div>
+                <p class="name">Lets predict your</p>
+                <p class="job"><em>Delivery Time !</em></p> 
+            </div>
+            <div class="about">
+                <img src="../static/images/trucks.gif" alt="logo1">
+                <h1>About the project</h1>
+                <br>
+                <P>Customer wants to be reasurred as to when there packages will arrive. Through the use of machine learning we are able to predict when your item will arrive !</P>
+                <br>
+                <p>This project utalises HTML5, CSS, Python, SAS and data science related packages such as Pandas, SciKit learn, matplotlib and numpy </p>
+                <br>
+                <p>The website currently is built on Flask which is a Python web framework. The two models i have created, Gradient Boosting and Random forest are both sitting in the back end of the website. </p>
+                <br>
+            </div>
+        </section>
+
+        <section class="models">
+            <div class="gradientB">
+                <h1>Predict using the Gradient Boosting model</h1>
+                <br>
+                <form method="POST", action="/boosting" class=boostingForm>
+                    <b> Delivery Region :  <input type="text", name='a', class="type-1" placeholder="Enter the delivery region"> <br><br>
+                        Courier :  <input type="text", name='b', class="type-1" placeholder="Enter the courier"> <br><br>
+                        Zip code :  <input type="text", name='c', class="type-1" placeholder="Enter the zip code"> <br><br>
+                        Return Tracking? :  <input type="text", name='d', class="type-1" placeholder="Returning tracking?"> <br><br>
+                        Delivery Location :  <input type="text", name='e', class="type-1" placeholder="Enter the delivery location"> <br><br>
+                        Transit Date :  <input type="text", name='f', class="type-1" placeholder="Enter the time of transit"> <br><br>
+                        Pick up date : <input type="text", name='g', class="type-1" placeholder="Enter the time the parcel was picked up"> <br><br><br></b>
+                     <input type="submit" , value='predict!', class="predBox" >
+                     <br><h4 align="center"<b>{{pred}}</b></h4>
+                 </form>
+
+            </div>
+            <div class="randomF">
+                <h1>Predict using the Random Forest model</h1>
+                <br>
+                <form method="POST", action="/forest" class="forestForm">
+                    <b> Delivery Region :  <input type="text", name='1', class="type-1", placeholder="Enter the delivery region"> <br><br>
+                     Courier :  <input type="text", name='2', class="type-1" placeholder="Enter the courier"> <br><br>
+                     Zip code :  <input type="text", name='3', class="type-1" placeholder="Enter the zip code"> <br><br>
+                     Return Tracking? :  <input type="text", name='4', class="type-1" placeholder="Returning tracking?"> <br><br>
+                     Delivery Location :  <input type="text", name='5', class="type-1" placeholder="Enter the delivery location"> <br><br>
+                     Transit Date :  <input type="text", name='6', class="type-1" placeholder="Enter the time of transit"> <br><br>
+                     Pick up date : <input type="text", name='7', class="type-1" placeholder="Enter the time the parcel was picked up"> <br><br><br></b>
+                     <input type="submit" , value='predict!', class="predBox" >
+                     <br><h4 align="center"<b>{{pred1}}</b></h4>
+                 </form>
+
+            </div>
+        </section>
+
+     </main>
+ </body>
+
+
+ </html>
+
+ 
