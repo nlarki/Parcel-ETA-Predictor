@@ -28,18 +28,24 @@
                 <p class="name">Lets predict your</p>
                 <p class="job"><em>Delivery Time !</em></p> 
             </div>
+            <div = class="image">
+                <img src="../static/images/globe.gif" alt="globe">
+            </div>
+        </section>
+        <section class="project">
             <div class="about">
                 <img src="../static/images/trucks.gif" alt="logo1">
                 <h1>About the project</h1>
                 <br>
-                <P>Customer wants to be reasurred as to when there packages will arrive. Through the use of machine learning we are able to predict when your item will arrive !</P>
+                <P>Customers want to be reasurred as to when there packages will arrive. Through the use of machine learning this is doable as we are able to predict to a high degree when a customers package will arrive !</P>
                 <br>
                 <p>This project utalises HTML5, CSS, Python, SAS and data science related packages such as Pandas, SciKit learn, matplotlib and numpy </p>
                 <br>
-                <p>The website currently is built on Flask which is a Python web framework. The two models i have created, Gradient Boosting and Random forest are both sitting in the back end of the website. </p>
+                <p>The website currently is built on Flask which is a Python web framework. The two models i have created, Gradient Boosting and Random forest are utalised through an API which send requests (the values for prediction) to each individual model, then POST's the prediction back to the home page. </p>
                 <br>
             </div>
         </section>
+
 
         <section class="models">
             <div class="gradientB">
@@ -76,7 +82,9 @@
             </div>
         </section>
 
+
      </main>
+
  </body>
 
 

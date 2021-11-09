@@ -4,19 +4,23 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: rgb(245, 239, 215);
-}
-
 html {
   font-size: 62.5%;
 }
 
 .presentation {
   display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  background-color: rgb(245, 239, 215);
+}
+
+.project {
+  display: flex;
   width: 90%;
   margin: auto;
-  min-height: 80vh;
+  min-height: 100vh;
   align-items: center;
 }
 
@@ -38,6 +42,17 @@ html {
   font-family: "Alata", sans-serif;
   flex: 1;
   animation: fadeIn 3s;
+  margin-left: 50px;
+}
+
+.image {
+  flex: 1;
+  animation: fadeIn 3s;
+}
+
+.image img {
+  height: 60vh;
+  border-radius: 100%;
 }
 
 .name {
@@ -93,7 +108,7 @@ html {
 }
 
 .about img {
-  height: 20vh;
+  height: 40vh;
 }
 
 .about h1 {
@@ -112,7 +127,7 @@ html {
   display: flex;
   width: 90%;
   margin: auto;
-  min-height: 150vh;
+  min-height: 100vh;
   align-items: center;
   color: black;
 }
