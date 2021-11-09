@@ -167,7 +167,7 @@ html {
   margin-top: 50px;
   margin-bottom: 100px;
   color: black;
-  background-color: white;
+  background-color: rgb(235, 235, 235);
 }
 
 .randomF {
@@ -180,7 +180,7 @@ html {
   margin-top: 50px;
   margin-bottom: 100px;
   color: black;
-  background-color: white;
+  background-color: rgb(235, 235, 235);
 }
 
 * {

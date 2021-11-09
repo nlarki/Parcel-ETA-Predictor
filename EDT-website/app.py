@@ -32,7 +32,7 @@ def boosting():
     GBresult = GBpred/1000
     GBresult = datetime.datetime.fromtimestamp(GBresult)
 
-    return render_template('index.html', pred=format(GBresult))
+    return render_template('index.html', pred='The estimated delivery date for your item is {}'.format(GBresult))
 
 
 @app.route('/forest', methods=['POST', 'GET'])
@@ -51,7 +51,7 @@ def forest():
     Fresult = Fpred/1000
     Fresult = datetime.datetime.fromtimestamp(Fresult)
 
-    return render_template('index.html', pred1=format(Fresult))
+    return render_template('index.html', pred1='The estimated delivery date for your item is {}'.format(Fresult))
 
 
 if __name__ == "__main__":
