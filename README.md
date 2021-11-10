@@ -18,3 +18,20 @@
     4. Found a paper discussing methods used for EDD estimation, they suggested boosting models as well as the forest model. link: https://arxiv.org/pdf/2009.11598.pdf
     4. Once the models had been produced and checked, they were then exported using pickle.
     5. A simple website was created using Flask, a python framework. The models were hosted in the backend of the website and were accesed through a REST API.
+
+## How to use the program
+
+    1. In order to use the program you must first clone the repo.
+    2. After cloning the repo ensure you install the requirements.txt
+    3. change directory to EDT-wbsite and then run: python app.py
+    4. website should host on: http://127.0.0.1:5000/
+    5. Enter information into the text boxes.
+    6. Due to the values being encoded during the prep stages, values such as GBR now have numerical values.
+    7. I recommend using these values as an example for the time being (obviously mess around with these values at the same time)
+    Delivery Region: 44
+    Courier: 3
+    Zip code: 4000
+    Return Tracking: 0
+    Delivery Location: 3
+    Transit Date: 2020-09-02 13:19:00
+    Pick up date: 2020-09-02 00:00:00

@@ -25,8 +25,14 @@ def boosting():
     delivery_location = request.form['e']
     Epoch_transit_date = request.form['f']
     Epoch_pickup_date = request.form['g']
+    transformedTransit = np.datetime64(Epoch_transit_date)
+    transformedPickup = np.datetime64(Epoch_pickup_date)
+    tt = (transformedTransit - np.datetime64('1970-01-01T00:00:00Z')) / \
+        np.timedelta64(1, 's')
+    tp = (transformedPickup - np.datetime64('1970-01-01T00:00:00Z')) / \
+        np.timedelta64(1, 's')
     arr = np.array([[delivery_region, courier, zip_code, return_tracking,
-                     delivery_location, Epoch_transit_date, Epoch_pickup_date]])
+                     delivery_location, tt, tp]])
     GBpred = GB.predict(arr)
     GBpred = GBpred.item(0)
     GBresult = GBpred/1000
@@ -44,8 +50,14 @@ def forest():
     delivery_location = request.form['5']
     Epoch_transit_date = request.form['6']
     Epoch_pickup_date = request.form['7']
+    transformedTransit = np.datetime64(Epoch_transit_date)
+    transformedPickup = np.datetime64(Epoch_pickup_date)
+    tt = (transformedTransit - np.datetime64('1970-01-01T00:00:00Z')) / \
+        np.timedelta64(1, 's')
+    tp = (transformedPickup - np.datetime64('1970-01-01T00:00:00Z')) / \
+        np.timedelta64(1, 's')
     arr = np.array([[delivery_region, courier, zip_code, return_tracking,
-                     delivery_location, Epoch_transit_date, Epoch_pickup_date]])
+                     delivery_location, tt, tp]])
     Fpred = RF.predict(arr)
     Fpred = Fpred.item(0)
     Fresult = Fpred/1000
