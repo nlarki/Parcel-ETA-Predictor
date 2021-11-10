@@ -19,6 +19,11 @@
     4. Once the models had been produced and checked, they were then exported using pickle.
     5. A simple website was created using Flask, a python framework. The models were hosted in the backend of the website and were accesed through a REST API.
 
+## Report based Analysis
+
+    I used SAS VA which is a tool similar to PowerBI. The report allows the user too look at deliveries at
+    a courier based level. Have a look here: https://viyawaves.sas.com/SASVisualAnalytics/?reportUri=%2Freports%2Freports%2Ffb24327b-4213-42e5-8ca6-2d4363b93ab2&sectionIndex=0&sso_guest=true&sas-welcome=false
+
 ## How to use the program
 
     1. In order to use the program you must first clone the repo.
