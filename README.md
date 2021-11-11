@@ -33,10 +33,4 @@ a courier based level. Have a look here: https://viyawaves.sas.com/SASVisualAnal
 5. Enter information into the text boxes.
 6. Due to the values being encoded during the prep stages, values such as GBR now have numerical values.
 7. I recommend using these values as an example for the time being (obviously mess around with these values at the same time)
-   Delivery Region: 44
-   Courier: 3
-   Zip code: 4000
-   Return Tracking: 0
-   Delivery Location: 3
-   Transit Date: 2020-09-02 13:19:00
-   Pick up date: 2020-09-02 00:00:00
+   Delivery Region: 44, Courier: 3, Return Tracking: 0, Delivery Location: 3, Transit Date: 2020-09-02 13:19:00, Pick up date: 2020-09-02 00:00:00
