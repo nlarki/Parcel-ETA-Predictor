@@ -1,8 +1,8 @@
-# ParcelLab-Task - 📦
+# Parcel ETA Prediction - 📦
 
 ## The purpose of the project
 
-- Develop 2 different ML Models for the estimation of the Delivery Date (EDD)
+- Develop 2 different ML Models for the estimation of the Delivery Date (EDD or ETA)
   1. Data exploration and preparation: understanding, cleaning, variable retention/Feature selection, etc.
   2. Model Selection
   3. Data Partitioning: Training and testing
